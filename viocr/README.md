@@ -2,6 +2,14 @@
 
 Bộ OCR tiếng Việt chạy cục bộ, lấy cảm hứng từ cách Light OCR trả văn bản theo dòng kèm vị trí. Phiên bản này dùng Tesseract 5 (LSTM), mô hình vie của tessdata_fast và PDFium. Bộ mã hóa CVNSS4.0 audit-safe 5.0.0 do chủ dự án cung cấp. Thư mục này độc lập với mã PaddleOCR tại gốc kho.
 
+## Mở tài liệu và xuất kết quả
+
+**[Chạy ViOCR trên trình duyệt](https://xulytiengviet.github.io/ViOCR/)**. Chọn kiểu chữ trên tài liệu (mặc định tiếng Việt), bấm **Mở tài liệu…** hoặc thả một tệp vào khung. OCR bắt đầu tự động. Sau khi đọc xong, bấm **Lưu Word**, **Lưu TXT** hoặc **Lưu JSONL**. Word giữ ngắt trang; TXT dùng UTF-8 có BOM và ký tự ngắt trang. JSONL giữ tọa độ và độ tin cậy. Edge/Chrome có hộp chọn thư mục và tên tệp; với trình duyệt dùng cơ chế tải xuống, bật “Hỏi nơi lưu mỗi tệp”. Ảnh và PDF được xử lý trong trình duyệt. Cần mạng để tải các thư viện OCR, đọc PDF/TIFF và xuất Word. GIF và ảnh động trên web dùng khung hình đầu. PDF và TIFF hỗ trợ nhiều trang. AVIF phụ thuộc bộ giải mã của trình duyệt.
+
+**Ứng dụng Windows**. Sau khi cài các công cụ và tải thư mục viocr theo hướng dẫn dưới đây, bấm đúp **ViOCR.cmd**. Lần đầu chương trình tạo môi trường Python và cài thư viện. Những lần sau có thể chạy ngoại tuyến. Bấm **Mở tài liệu…**, chọn ảnh/PDF, đợi kết quả và dùng **Lưu Word** hoặc **Lưu TXT** để chọn nơi lưu bằng hộp thoại Windows. Muốn dùng dòng lệnh hoặc đo hiệu năng, xem các lệnh bên dưới.
+
+**Tác giả và giấy phép.** Long Ngo phát triển phần mềm ViOCR dựa trên dự án CVNSS4.0. Mã giao diện, bộ tích hợp, công cụ xuất và kiểm chuẩn do Long Ngo phát hành theo [MIT](LICENSE). Bộ chuyển đổi CVNSS4.0 được cung cấp riêng; mô hình tessdata_fast giữ Apache-2.0. Mã PaddleOCR ở gốc kho và các thư viện bên thứ ba giữ giấy phép tương ứng. Kết quả tốc độ trong bảng bên dưới đo trên bộ xử lý OCR của bản PC; tốc độ WebAssembly trên trình duyệt cần đo riêng.
+
 ## Cài trên Windows 10/11 x64
 
 Trong PowerShell, cài Git, Python 3.12, Node.js 22+ và Tesseract 5 nếu máy còn thiếu. Với winget:

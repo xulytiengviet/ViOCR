@@ -1,4 +1,6 @@
-# ViOCR · OCR tiếng Việt cho PC
+# ViOCR · OCR tiếng Việt cho PC và trình duyệt
+
+**[Mở phần mềm ViOCR](https://xulytiengviet.github.io/ViOCR/)** · Chọn ảnh/PDF, xem tiếng Việt và lưu Word hoặc TXT. Giao diện Windows cổ điển do Long Ngo phát triển dựa trên CVNSS4.0. [Giấy phép MIT cho mã ViOCR](viocr/LICENSE).
 
 Chuyển PDF và ảnh thành JSONL với tọa độ, độ tin cậy, văn bản Unicode và mã CVNSS4.0/Base27. [Hướng dẫn Windows và benchmark](viocr/README.md) · [Mã nguồn](viocr/) · [Trang dự án](https://xulytiengviet.github.io/ViOCR/)
 
