@@ -1,3 +1,7 @@
+# ViOCR · OCR tiếng Việt cho PC
+
+Chuyển PDF và ảnh thành JSONL với tọa độ, độ tin cậy, văn bản Unicode và mã CVNSS4.0/Base27. [Hướng dẫn Windows và benchmark](viocr/README.md) · [Mã nguồn](viocr/) · [Trang dự án](https://xulytiengviet.github.io/ViOCR/)
+
 
 <div align="center">
   <p>

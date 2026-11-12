@@ -1,0 +1,13 @@
+{
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "file": "trang.png",
+  "dpi": 150,
+  "runs": 10,
+  "measured_pages": 10,
+  "model_bytes": 531275,
+  "inference_p95_s": 0.2703882970000109,
+  "mean_wall_s_per_page": 0.3341708898000036,
+  "exact_text": true,
+  "passed": true
+}
